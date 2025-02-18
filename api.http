@@ -5,3 +5,7 @@ Content-Type: application/json
     "name": "Pedro Visconti Guidotte",
     "email": "peguidotte@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/invites/diego123

@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { fastify } from 'fastify'
 import { fastifyCors } from '@fastify/cors'
 import {
@@ -16,7 +17,6 @@ import { getSubscriberInviteCountRoute } from './routes/get-subscriber-invite-co
 import { getSubscriberRankingPositionRoute } from './routes/get-subscriber-ranking-position-route'
 import { getRankingRoute } from './routes/get-ranking-route'
 import { redis } from './redis/client'
-import postgres from 'postgres'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 

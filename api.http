@@ -2,10 +2,27 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Pedro Visconti Guidotte",
-    "email": "peguidotte@gmail.com"
+    "name": "Indicado 3",
+    "email": "indic3@gmail.com",
+    "referrer": "dd9ac68f-0ae3-431c-91a5-9443d0f3370c"
 }
 
 ###
 
-GET http://localhost:3333/invites/diego123
+GET http://localhost:3333/invites/575159d9-3761-4f23-bca1-138b889f72b8
+
+###
+
+GET http://localhost:3333/subscribers/575159d9-3761-4f23-bca1-138b889f72b8/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/575159d9-3761-4f23-bca1-138b889f72b8/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/575159d9-3761-4f23-bca1-138b889f72b8/ranking/position
+
+###
+
+GET http://localhost:3333/ranking

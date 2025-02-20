@@ -2,8 +2,8 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Indicado 3",
-    "email": "indic3@gmail.com",
+    "name": "Indica",
+    "email": "indc3@gmil.com",
     "referrer": "dd9ac68f-0ae3-431c-91a5-9443d0f3370c"
 }
 

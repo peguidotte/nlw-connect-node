@@ -15,6 +15,8 @@ import { getSubscriberInviteClicksRoute } from './routes/get-subscriber-invite-c
 import { getSubscriberInviteCountRoute } from './routes/get-subscriber-invite-count-route'
 import { getSubscriberRankingPositionRoute } from './routes/get-subscriber-ranking-position-route'
 import { getRankingRoute } from './routes/get-ranking-route'
+import { redis } from './redis/client'
+import postgres from 'postgres'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -46,5 +48,6 @@ app.register(getRankingRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log('HTTP server running')
+  redis.set('test', 'Hello, Redis!')
+  redis.get('test').then(console.log)
 })
-
